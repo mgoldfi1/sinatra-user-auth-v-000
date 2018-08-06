@@ -33,6 +33,7 @@ if User.exists?(email: params["email"], password: params["password"])
 session[:id] = @user.id
  redirect '/users/home'
  end
+ end
 
   get '/sessions/logout' do
 session.clear
