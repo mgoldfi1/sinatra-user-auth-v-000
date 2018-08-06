@@ -33,6 +33,7 @@ class ApplicationController < Sinatra::Base
     if @user != nil
     redirect '/users/home'
   end
+  end
 
   get '/sessions/logout' do
 session.clear
