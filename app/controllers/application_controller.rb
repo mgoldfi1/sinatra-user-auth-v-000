@@ -35,6 +35,7 @@ session[:id] = @user.id
 else
   redirect '/sessions/login'
  end
+ end
 
   get '/sessions/logout' do
 session.clear
